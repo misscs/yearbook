@@ -1,0 +1,251 @@
+/*
+	Claudina Sarahe HSAVA Yearbook
+
+	Color Scheme
+	------------
+	Primary: #76367b
+	Accent:
+ */
+
+
+/*
+	Layout
+ */
+
+
+/* Hack to make the internet behave */
+*,
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+	/* background:blue; */
+	font-size:  18px;
+}
+
+.wrapper {
+/* 	background-color: lightgreen; */
+	max-width: 1024px;
+	width: 1024px;
+	margin:0px auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+	flex:  1;
+}
+
+footer {
+	background: #76367b;
+	color: white;
+	text-align: center;
+	font-size: 11px;
+	padding: 5px 0;
+}
+
+/* Link Styles */
+
+a {
+	color: #76367b;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+a:visted {
+	color: red;
+}
+
+a:hover {
+	border-bottom: 1px solid #76367b;
+}
+
+
+/*
+	Resets
+ */
+img {
+	width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding:  0;
+}
+
+
+/*
+	Typography
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Ubuntu Condensed", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.headline-light {
+	color: white;
+}
+
+.headline-dark {
+	color: #76367b;
+}
+
+
+/* Navigation */
+
+.nav {
+	border-bottom:  1px solid lightgrey;
+	padding: 10px 15px;
+	text-align: right;
+}
+
+.nav .link {
+	margin-right:  10px;
+}
+
+.home-link {
+	align-self: flex-start;
+	float: left;
+}
+
+/* Header Introduction */
+
+.intro {
+	text-align: center;
+	padding: 15px 0;
+}
+
+.intro-image {
+	width: 100px;
+	height:  100px;
+	border-radius: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	border:  3px solid #76367b;
+}
+
+.intro-image img {
+	width: 150px;
+	margin-left:  -20px;
+}
+
+
+/* Travel Section */
+.travel-section-content {
+	display: flex; /* or you can use the .flex class */
+	flex-wrap: wrap;
+}
+
+.travel-section-header {
+	text-align: center;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.travel-item {
+	width: 50%;
+	padding: 5px;
+}
+
+.travel-item-budapest {
+	background: gold;
+}
+
+.travel-item-berlin {
+	background: #76367b;
+	color: white;
+}
+
+.travel-item-dr {
+	background: gold;
+}
+
+.travel-item-melbourne {
+	background: #76367b;
+	color: white;
+}
+
+
+/* HSAVAT Section */
+.hsavat-students {
+	display: flex;
+}
+
+.hsavat-student-block {
+	width:25%;
+	background:green;
+	margin:10px 5px 10px 5px;
+}
+
+.left-side-picture {
+	margin-left: 10px;
+}
+
+.right-side-picture {
+	margin-right: 10px;
+}
+
+/* Speaking Section */
+
+.speaking-section {
+	background:  url('../img/cs-speaking.jpg');
+	height: 500px;
+}
+
+.speaking-section-content {
+	color: white;
+	width: 50%;
+	text-align: center;
+}
+
+/* Side by Side Image with Content */
+
+.diptych-with-image {
+	display: flex;
+	height:  600px;
+	overflow: hidden;
+}
+
+.diptych-with-image-flipped .image {
+	order:  1;
+}
+
+.diptych-with-image-flipped .content {
+	order:  0;
+}
+
+
+.diptych-with-image .block {
+	width:  50%;
+}
+
+.diptych-with-image .content {
+	padding:  10px 15px;
+}
+
+.icon-list li {
+/* 	display: flex;
+	align-items: center;
+ */	margin-bottom:  25px;
+}
+
+.icon-list .icon {
+	width:  50px;
+	height:  50px;
+	margin-right: 15px;
+	background: #76367b;
+	border-radius: 50%;
+	padding: 5px;
+}
