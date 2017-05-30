@@ -32,7 +32,7 @@
 			<p class="intro-byline">Teacher, Organizer, Lover of Learning</p>
 		</header>
 
-		<section class="speaking-section flex justify-end">
+		<section id="about" class="speaking-section flex justify-end">
 			<div class="speaking-section-content self-center">
 				<h1>I love to share my knowledge</h1>
 				<p>I speak, teach, and organize in my hometown—NYC—and around the world.</p>
@@ -40,48 +40,55 @@
 		</section>
 
 		<section class="travel-section">
-			<div class="travel-section-header">
+			<header class="travel-section-header">
 				<h1 class="headline-dark">Sharing my knowledge takes me to some exciting places</h1>
 				<p>I am fascinated by other cultures and people. Travling to share what I love has been a greay way to make new friends and explore the world</p>
-			</div>
+			</header>
 
 			<div class="travel-section-content flex">
 
 				<article class="travel-item travel-item-budapest">
-					<img src="assets/img/budapest.jpg" width="200px">
-					<h3>Budapest, Hungary</h3>
-					<p>I got to travel to Budapest to give a talk.</p>
+					<img src="assets/img/budapest.jpg">
+					<div class="travel-item-content">
+						<h3>Budapest, Hungary</h3>
+						<p>I got to travel to Budapest to give a talk.</p>
+					</div>
 				</article>
 
 				<article class="travel-item travel-item-melbourne">
-					<img src="assets/img/melbourne.jpg" width="200px">
-					<h3>Melbourne, Australia</h3>
-					<p>I got to travel to Melbourne to give a talk.</p>
+					<img src="assets/img/melbourne.jpg">
+					<div class="travel-item-content">
+						<h3>Melbourne, Australia</h3>
+						<p>I traveled to Australia in 2015 to give a talk at CSSConf Australia. I got to drive on the opposite side of the road and met George Clinton.</p>
+					</div>
 				</article>
 
 				<article class="travel-item travel-item-berlin">
-					<img src="assets/img/berlin.jpg" width="200px">
-					<h3>Berlin, Germany</h3>
-					<p>I got to travel to Berlin to speak and for work.</p>
+					<img src="assets/img/berlin.jpg">
+					<div class="travel-item-content">
+						<h3>Berlin, Germany</h3>
+						<p></p>
+					</div>
 				</article>
 
 				<article class="travel-item travel-item-dr">
-					<img src="assets/img/berlin.jpg" width="200px">
-					<h3>Dominican Republic</h3>
-					<p>I travel to visit my family and volunteer teach for COSOLA/MACILE.</p>
+					<img src="assets/img/berlin.jpg">
+					<div class="travel-item-content">
+						<h3>Dominican Republic</h3>
+						<p>I regularly travel to visit my family. My abuelita and all my cousins live near Santo Domingo. In June, I am teaching a group of 4 students web development.</p>
+					</div>
 				</article>
 			</div>
 		</section>
 
 
-		<section class="diptych-with-image flex">
+		<section class="diptych-with-image diptych-with-image-flipped flex">
 			<div class="image block">
 				<img src="assets/img/mitra-woodworking.jpg">
 			</div>
 
 			<div class="content block">
-				<h2 class="headline-dark">My Hobbies</h2>
-				<p>I am an autodidact. Ever since I was a kid, I've enjoyed teaching myself new things. I like to learn on my own and with others.</p>
+				<h2 class="hobbies-headline headline-dark">I am an autodiact. I love to teach myself new things.</h2>
 				<ul class="icon-list">
 		      <li class="flex items-center">
 		      	<div class="icon">
@@ -101,35 +108,74 @@
 		      	</div>
 		      	<span class="icon-text">Learning languages</span>
 		      </li>
+					<li class="flex items-center">
+		      	<div class="icon">
+		      		<img src="assets/img/icon-languages.svg">
+		      	</div>
+		      	<span class="icon-text">Rock climbing</span>
+		      </li>
+
 		    </ul>
 			</div>
 		</section>
 	</main>
 
-	<aside class="flex hsavat-students">
-		<article class="hsavat-student-block left-side-picture">
-			<a href="/"><img src="assets/img/me.jpg" width="200px"></a>
-			<h3> <a href="/">Mael Quentin</a> </h3>
-			<p> Nerd </p>
-		</article>
+	<aside class="hsavat-students">
 
-		<article class="hsavat-student-block">
-			<a href="/"><img src="assets/img/me.jpg" width="200px"></a>
-			<h3> <a href="/">Mael Quentin</a> </h3>
-			<p> Nerd </p>
-		</article>
+		<h1 class="hsavat-students-headline">HSAVAT Web Foundations Class</h1>
 
-		<article class="hsavat-student-block">
-			<a href="/"><img src="assets/img/me.jpg" width="200px"></a>
-			<h3> <a href="/">Mael Quentin</a> </h3>
-			<p> Nerd </p>
-		</article>
+		<div class="hsavat-students-content">
+			<article class="hsavat-student-block left-side-picture">
+				<div class="hsavat-student-photo">
+					<a href="https://github.com/mquentin17/yearbook">
+						<img src="assets/img/me.jpg">
+				</a>
+				</div>
+				<h3>
+					<a href="https://github.com/mquentin17/yearbook">Mael Quentin</a>
+				</h3>
+				<p>Scholar, Cuber, Gamer</p>
+			</article>
 
-		<article class="hsavat-student-block right-side-picture">
-			<a href="/"><img src="assets/img/me.jpg" width="200px"></a>
-			<h3> <a href="/">Mael Quentin</a> </h3>
-			<p> Nerd </p>
-		</article>
+			<article class="hsavat-student-block">
+				<div class="hsavat-student-photo">
+					<a href="https://github.com/cheftobe/yearbook">
+						<img src="assets/img/me.jpg">
+					</a>
+				</div>
+
+				<h3>
+					<a href="https://github.com/cheftobe/yearbook">Jahqyad Austin</a>
+				</h3>
+				<p>Caterer, Artist, and Entrepreneur</p>
+			</article>
+
+			<article class="hsavat-student-block">
+				<div class="hsavat-student-photo">
+					<a href="https://github.com/zahra-burroughs/yearbook">
+						<img src="assets/img/me.jpg">
+					</a>
+				</div>
+
+				<h3>
+					<a href="https://github.com/zahra-burroughs/yearbook">Zahra Burroughs</a>
+				</h3>
+				<p>Athlete, Future Scientist</p>
+			</article>
+
+			<article class="hsavat-student-block right-side-picture">
+				<div class="hsavat-student-photo">
+					<a href="https://github.com/misscs/yearbook">
+						<img src="https://pbs.twimg.com/profile_images/765561058652192769/9MvFwaEM.jpg">
+					</a>
+				</div>
+
+				<h3>
+					<a href="https://github.com/misscs/yearbook">Claudina Sarahe</a>
+				</h3>
+				<p>Teacher, Organizer, Lover of Learning</p>
+			</article>
+		</div>
 	</aside>
 
 	<footer class="footer">
