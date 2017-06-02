@@ -179,13 +179,12 @@ h6 {
 
 
 /* HSAVAT Section */
-.hsavat-students {
+.hsavat-students-content {
 	display: flex;
 }
 
 .hsavat-student-block {
-	width:25%;
-	background:green;
+	width: 25%;
 	margin:10px 5px 10px 5px;
 }
 
