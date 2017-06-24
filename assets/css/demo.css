@@ -155,20 +155,25 @@ h6 {
 
 /* Header Introduction */
 
-.intro {
+.profile-intro {
 	text-align: center;
 	padding: 15px 0;
 }
 
-.intro-image {
+.profile-image .intro-image {
 	border:  3px solid #76367b;
 	width: 100px;
 	height: 100px;
 }
 
-.intro-image img {
+.misscs-image {
 	width: 150px;
 	margin-left:  -20px;
+}
+
+.misscs-image-large{
+	width: 250px;
+	margin-left:  -50px;
 }
 
 
@@ -229,11 +234,24 @@ h6 {
 }
 
 .home .intro {
-	background: #dfdfdf;
+	background-image: url('../../assets/img/hsavad-team-photo-abridged.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 -170px;
 	display: flex;
 	flex-direction: column;
 	height: 400px;
-	justify-content: flex-end;
+	color: #fff;
+}
+
+
+.home .intro-content {
+	width: 352px;
+  font-size: 14px;
+  background: #76367b;
+  padding: 3em 1em 3em;
+  opacity: .8;
+
 }
 
 .student-section h1 {
@@ -358,20 +376,16 @@ h6 {
 	border: 3px solid purple;
 }
 
-.hsavat-student-cs img {
-	width: 150px;
-	margin-left:  -20px;
-}
-
 /* Student Work Homepage */
-/*.student-work-content {
-	displ
-}
-*/
-.student-work-colum {
-	width: 50%;
+
+.student-presentations {
+	margin-left: 1em;
+	font-size: 16px;
 }
 
+.student-presentations li {
+	margin: 0.5em 0;
+}
 
 
 /* HSAVAT Section */
