@@ -1,10 +1,12 @@
 /*
-	Claudina Sarahe HSAVA Yearbook
+	Claudina Sarahe HSAVAT Yearbook book
 
 	Color Scheme
 	------------
 	Primary: #76367b
-	Accent:
+	Accent: gold
+	Secondary: white
+
  */
 
 
@@ -17,8 +19,8 @@ html {
 
 body {
 	font-family: "Open Sans Condensed", sans-serif;
-	/* background:blue; */
-	font-size:  18px;
+	font-size:  14px;
+	line-height: 1.4;
 }
 
 .wrapper {
@@ -47,16 +49,16 @@ footer {
 a {
 	color: #76367b;
 	text-decoration: none;
-	font-size: 14px;
+}
+
+a:hover {
+	color: gold;
 }
 
 a:visted {
 	color: red;
 }
 
-a:hover {
-	border-bottom: 1px solid #76367b;
-}
 
 
 /*
@@ -100,6 +102,11 @@ h6 {
 	color: #76367b;
 }
 
+.lead-text {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
 /*
 	Components
 	==========
@@ -137,13 +144,14 @@ h6 {
 }
 
 .nav a:hover {
-	border-bottom: 1px solid #76367b;
+	border-bottom: 1px solid gold;
 }
 
 .home-link {
 	align-self: flex-start;
 	float: left;
 }
+
 
 /* Header Introduction */
 
@@ -154,6 +162,8 @@ h6 {
 
 .intro-image {
 	border:  3px solid #76367b;
+	width: 100px;
+	height: 100px;
 }
 
 .intro-image img {
@@ -171,12 +181,23 @@ h6 {
 .travel-section-header {
 	text-align: center;
 	max-width: 600px;
-	margin: 20px auto;
+	margin: 30px auto;
+}
+
+.travel-section-headline {
+	margin-bottom: 15px;
 }
 
 .travel-item {
 	width: 50%;
-	padding: 5px;
+}
+
+.travel-item-content {
+	padding: 15px;
+}
+
+.travel-item-content h3 {
+	margin-bottom: 10px;
 }
 
 .travel-item-budapest {
@@ -226,12 +247,6 @@ h6 {
 	margin: 2em 0;
 }
 
-.student-list .hsavat-student-block {
-	display: flex;
-	width: 50%;
-	min-height: 500px;
-}
-
 .hsavat-student-block-inner {
 	display: flex;
 	flex-direction: column;
@@ -262,14 +277,20 @@ h6 {
 	margin-bottom: 10px;
 }
 
-.hsavat-student-block a {
+.student-list .hsavat-student-block {
+	display: flex;
+	width: 50%;
+	min-height: 500px;
+}
+
+.student-list .hsavat-student-block a {
 	color: white;
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
-.hsavat-student-block a:hover {
+.student-list .hsavat-student-block a:hover {
 	border-bottom: none;
 }
 
@@ -342,17 +363,44 @@ h6 {
 	margin-left:  -20px;
 }
 
+/* Student Work Homepage */
+/*.student-work-content {
+	displ
+}
+*/
+.student-work-colum {
+	width: 50%;
+}
+
+
 
 /* HSAVAT Section */
+.hsavat-students {
+	margin-bottom: 30px;
+}
+
+.hsavat-students-headline {
+	text-align: center;
+	margin: 30px 0;
+}
+
 .hsavat-students-content {
 	display: flex;
 }
-
 
 .hsavat-students .hsavat-student-block {
 	width:25%;
 	margin:10px 5px 10px 5px;
 }
+
+.hsavat-students .hsavat-student-block .student-image {
+	border: 3px solid purple;
+}
+
+.hsavat-students .hsavat-student-block .student-image:hover {
+	border-color: gold;
+}
+
 
 .left-side-picture {
 	margin-left: 10px;
